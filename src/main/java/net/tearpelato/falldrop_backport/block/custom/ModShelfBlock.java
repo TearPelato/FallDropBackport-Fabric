@@ -1,11 +1,11 @@
-package net.tearpelato.falldropbackportFabric.block.custom;
+package net.tearpelato.falldrop_backport.block.custom;
 
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.ShelfBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
-import net.tearpelato.falldropbackportFabric.block.entity.ModShelfBlockEntity;
+import net.tearpelato.falldrop_backport.block.entity.ModShelfBlockEntity;
 import org.jspecify.annotations.Nullable;
 
 public class ModShelfBlock extends ShelfBlock {

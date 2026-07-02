@@ -1,4 +1,4 @@
-package net.tearpelato.falldropbackportFabric.worldgen;
+package net.tearpelato.falldrop_backport.worldgen;
 
 import net.minecraft.world.level.block.grower.TreeGrower;
 

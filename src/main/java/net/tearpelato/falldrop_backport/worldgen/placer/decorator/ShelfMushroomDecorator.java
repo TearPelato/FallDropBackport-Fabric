@@ -1,4 +1,4 @@
-package net.tearpelato.falldropbackportFabric.worldgen.placer.decorator;
+package net.tearpelato.falldrop_backport.worldgen.placer.decorator;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
@@ -7,9 +7,9 @@ import net.minecraft.core.Direction;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecorator;
 import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecoratorType;
-import net.tearpelato.falldropbackportFabric.block.custom.ShelfMushroomBlock;
-import net.tearpelato.falldropbackportFabric.registries.ModBlocks;
-import net.tearpelato.falldropbackportFabric.registries.ModTreeDecoratorType;
+import net.tearpelato.falldrop_backport.block.custom.ShelfMushroomBlock;
+import net.tearpelato.falldrop_backport.registries.ModBlocks;
+import net.tearpelato.falldrop_backport.registries.ModTreeDecoratorType;
 
 import java.util.List;
 

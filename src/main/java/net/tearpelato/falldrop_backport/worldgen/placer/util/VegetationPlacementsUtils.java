@@ -1,4 +1,4 @@
-package net.tearpelato.falldropbackportFabric.worldgen.placer.util;
+package net.tearpelato.falldrop_backport.worldgen.placer.util;
 
 import com.google.common.collect.ImmutableList;
 import net.minecraft.data.worldgen.placement.PlacementUtils;

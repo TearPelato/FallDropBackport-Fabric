@@ -1,4 +1,4 @@
-package net.tearpelato.falldropbackportFabric;
+package net.tearpelato.falldrop_backport;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.resources.Identifier;

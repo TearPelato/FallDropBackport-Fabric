@@ -1,4 +1,4 @@
-package net.tearpelato.falldropbackportFabric.worldgen;
+package net.tearpelato.falldrop_backport.worldgen;
 
 import net.minecraft.core.Direction;
 import net.minecraft.core.Holder;
@@ -13,9 +13,9 @@ import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.placement.*;
-import net.tearpelato.falldropbackportFabric.Constants;
-import net.tearpelato.falldropbackportFabric.registries.ModBlocks;
-import net.tearpelato.falldropbackportFabric.worldgen.placer.util.VegetationPlacementsUtils;
+import net.tearpelato.falldrop_backport.Constants;
+import net.tearpelato.falldrop_backport.registries.ModBlocks;
+import net.tearpelato.falldrop_backport.worldgen.placer.util.VegetationPlacementsUtils;
 
 import java.util.List;
 

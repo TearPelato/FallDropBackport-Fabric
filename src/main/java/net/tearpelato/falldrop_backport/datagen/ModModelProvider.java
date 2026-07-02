@@ -1,4 +1,4 @@
-package net.tearpelato.falldropbackportFabric.datagen;
+package net.tearpelato.falldrop_backport.datagen;
 
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
@@ -12,10 +12,10 @@ import net.minecraft.client.renderer.block.dispatch.VariantMutator;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
-import net.tearpelato.falldropbackportFabric.Constants;
-import net.tearpelato.falldropbackportFabric.block.custom.ShelfMushroomBlock;
-import net.tearpelato.falldropbackportFabric.registries.ModBlocks;
-import net.tearpelato.falldropbackportFabric.registries.ModItems;
+import net.tearpelato.falldrop_backport.Constants;
+import net.tearpelato.falldrop_backport.block.custom.ShelfMushroomBlock;
+import net.tearpelato.falldrop_backport.registries.ModBlocks;
+import net.tearpelato.falldrop_backport.registries.ModItems;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricPackOutput output) {

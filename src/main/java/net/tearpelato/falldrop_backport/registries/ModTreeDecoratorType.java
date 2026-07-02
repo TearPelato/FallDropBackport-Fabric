@@ -1,12 +1,12 @@
-package net.tearpelato.falldropbackportFabric.registries;
+package net.tearpelato.falldrop_backport.registries;
 
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecorator;
 import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecoratorType;
-import net.tearpelato.falldropbackportFabric.Constants;
-import net.tearpelato.falldropbackportFabric.worldgen.placer.decorator.ShelfMushroomDecorator;
+import net.tearpelato.falldrop_backport.Constants;
+import net.tearpelato.falldrop_backport.worldgen.placer.decorator.ShelfMushroomDecorator;
 
 public class ModTreeDecoratorType {
 
@@ -23,7 +23,7 @@ public class ModTreeDecoratorType {
     }
 
 
-    public static void registerCreativeModeTabs() {
+    public static void registerTreeDecorators() {
         Constants.LOGGER.info("Registering Tree Decorators for " + Constants.MOD_ID);
     }
 }

@@ -1,4 +1,4 @@
-package net.tearpelato.falldropbackportFabric.particle;
+package net.tearpelato.falldrop_backport.particle;
 
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.particle.FallingLeavesParticle;

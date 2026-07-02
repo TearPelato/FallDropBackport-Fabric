@@ -1,11 +1,11 @@
-package net.tearpelato.falldropbackportFabric.block.custom;
+package net.tearpelato.falldrop_backport.block.custom;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.StandingSignBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.WoodType;
-import net.tearpelato.falldropbackportFabric.block.entity.ModSignBlockEntity;
+import net.tearpelato.falldrop_backport.block.entity.ModSignBlockEntity;
 
 public class ModStandingSignBlock extends StandingSignBlock {
     public ModStandingSignBlock(WoodType pType, Properties pProperties) {

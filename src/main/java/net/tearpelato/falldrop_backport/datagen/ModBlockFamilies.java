@@ -1,7 +1,7 @@
-package net.tearpelato.falldropbackportFabric.datagen;
+package net.tearpelato.falldrop_backport.datagen;
 
 import net.minecraft.data.BlockFamily;
-import net.tearpelato.falldropbackportFabric.registries.ModBlocks;
+import net.tearpelato.falldrop_backport.registries.ModBlocks;
 
 public class ModBlockFamilies {
     public static final BlockFamily POPLAR_PLANKS = new BlockFamily.Builder(ModBlocks.POPLAR_PLANKS)

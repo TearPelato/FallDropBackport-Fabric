@@ -1,4 +1,4 @@
-package net.tearpelato.falldropbackportFabric.registries;
+package net.tearpelato.falldrop_backport.registries;
 
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -12,9 +12,9 @@ import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
-import net.tearpelato.falldropbackportFabric.Constants;
-import net.tearpelato.falldropbackportFabric.block.custom.*;
-import net.tearpelato.falldropbackportFabric.worldgen.ModTreeGrowers;
+import net.tearpelato.falldrop_backport.Constants;
+import net.tearpelato.falldrop_backport.block.custom.*;
+import net.tearpelato.falldrop_backport.worldgen.ModTreeGrowers;
 
 import java.util.function.Function;
 

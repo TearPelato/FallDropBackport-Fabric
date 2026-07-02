@@ -1,7 +1,7 @@
-package net.tearpelato.falldropbackportFabric.entity.client;
+package net.tearpelato.falldrop_backport.entity.client;
 
 import net.minecraft.client.model.geom.ModelLayerLocation;
-import net.tearpelato.falldropbackportFabric.Constants;
+import net.tearpelato.falldrop_backport.Constants;
 
 public class ModModelLayerLocations {
 

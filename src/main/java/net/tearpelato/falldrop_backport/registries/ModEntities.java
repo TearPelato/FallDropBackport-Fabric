@@ -1,4 +1,4 @@
-package net.tearpelato.falldropbackportFabric.registries;
+package net.tearpelato.falldrop_backport.registries;
 
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -9,7 +9,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.vehicle.boat.Boat;
 import net.minecraft.world.entity.vehicle.boat.ChestBoat;
-import net.tearpelato.falldropbackportFabric.Constants;
+import net.tearpelato.falldrop_backport.Constants;
 
 public class ModEntities {
 

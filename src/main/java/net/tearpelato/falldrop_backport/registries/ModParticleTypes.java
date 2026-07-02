@@ -1,10 +1,10 @@
-package net.tearpelato.falldropbackportFabric.registries;
+package net.tearpelato.falldrop_backport.registries;
 
 import net.fabricmc.fabric.api.particle.v1.FabricParticleTypes;
 import net.minecraft.core.Registry;
 import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.tearpelato.falldropbackportFabric.Constants;
+import net.tearpelato.falldrop_backport.Constants;
 
 public class ModParticleTypes {
     public static final SimpleParticleType RED_POPLAR_LEAVES =

@@ -1,14 +1,14 @@
-package net.tearpelato.falldropbackportFabric;
+package net.tearpelato.falldrop_backport;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.registries.Registries;
-import net.tearpelato.falldropbackportFabric.datagen.ModBlockLootableProvider;
-import net.tearpelato.falldropbackportFabric.datagen.*;
-import net.tearpelato.falldropbackportFabric.registries.ModBiomes;
-import net.tearpelato.falldropbackportFabric.worldgen.ModConfiguredFeatures;
-import net.tearpelato.falldropbackportFabric.worldgen.ModPlacedFeatures;
+import net.tearpelato.falldrop_backport.datagen.ModBlockLootableProvider;
+import net.tearpelato.falldrop_backport.datagen.*;
+import net.tearpelato.falldrop_backport.registries.ModBiomes;
+import net.tearpelato.falldrop_backport.worldgen.ModConfiguredFeatures;
+import net.tearpelato.falldrop_backport.worldgen.ModPlacedFeatures;
 
 public class FallDropBackportDataGen implements DataGeneratorEntrypoint {
     @Override

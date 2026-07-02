@@ -1,10 +1,10 @@
-package net.tearpelato.falldropbackportFabric.datagen;
+package net.tearpelato.falldrop_backport.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagsProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.tags.BlockTags;
-import net.tearpelato.falldropbackportFabric.registries.ModBlocks;
+import net.tearpelato.falldrop_backport.registries.ModBlocks;
 
 import java.util.concurrent.CompletableFuture;
 

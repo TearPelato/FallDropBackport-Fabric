@@ -1,4 +1,4 @@
-package net.tearpelato.falldropbackportFabric.datagen;
+package net.tearpelato.falldrop_backport.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
@@ -8,9 +8,9 @@ import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Blocks;
-import net.tearpelato.falldropbackportFabric.registries.ModBlocks;
-import net.tearpelato.falldropbackportFabric.registries.ModItems;
-import net.tearpelato.falldropbackportFabric.registries.ModTags;
+import net.tearpelato.falldrop_backport.registries.ModBlocks;
+import net.tearpelato.falldrop_backport.registries.ModItems;
+import net.tearpelato.falldrop_backport.registries.ModTags;
 
 import java.util.concurrent.CompletableFuture;
 

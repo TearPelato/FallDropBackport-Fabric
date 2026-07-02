@@ -1,12 +1,12 @@
-package net.tearpelato.falldropbackportFabric.registries;
+package net.tearpelato.falldrop_backport.registries;
 
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacerType;
-import net.tearpelato.falldropbackportFabric.Constants;
-import net.tearpelato.falldropbackportFabric.worldgen.placer.PoplarFoliagePlacer;
+import net.tearpelato.falldrop_backport.Constants;
+import net.tearpelato.falldrop_backport.worldgen.placer.PoplarFoliagePlacer;
 
 public class ModFoliagePlacerTypes {
 

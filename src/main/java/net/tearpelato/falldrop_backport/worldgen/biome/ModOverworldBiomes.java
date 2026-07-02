@@ -1,4 +1,4 @@
-package net.tearpelato.falldropbackportFabric.worldgen.biome;
+package net.tearpelato.falldrop_backport.worldgen.biome;
 
 import net.minecraft.core.HolderGetter;
 import net.minecraft.data.worldgen.BiomeDefaultFeatures;
@@ -15,7 +15,7 @@ import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraft.world.level.levelgen.carver.ConfiguredWorldCarver;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
-import net.tearpelato.falldropbackportFabric.worldgen.ModPlacedFeatures;
+import net.tearpelato.falldrop_backport.worldgen.ModPlacedFeatures;
 
 public class ModOverworldBiomes {
 

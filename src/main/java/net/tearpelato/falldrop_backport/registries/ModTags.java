@@ -1,10 +1,10 @@
-package net.tearpelato.falldropbackportFabric.registries;
+package net.tearpelato.falldrop_backport.registries;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
-import net.tearpelato.falldropbackportFabric.Constants;
+import net.tearpelato.falldrop_backport.Constants;
 
 public class ModTags {
     public static class Blocks{

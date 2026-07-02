@@ -1,12 +1,12 @@
-package net.tearpelato.falldropbackportFabric.registries;
+package net.tearpelato.falldrop_backport.registries;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.biome.Biome;
-import net.tearpelato.falldropbackportFabric.Constants;
-import net.tearpelato.falldropbackportFabric.worldgen.biome.ModOverworldBiomes;
-import net.tearpelato.falldropbackportFabric.worldgen.biome.region.OverworldRegion;
+import net.tearpelato.falldrop_backport.Constants;
+import net.tearpelato.falldrop_backport.worldgen.biome.ModOverworldBiomes;
+import net.tearpelato.falldrop_backport.worldgen.biome.region.OverworldRegion;
 import terrablender.api.Regions;
 
 public class ModBiomes {

@@ -1,27 +1,30 @@
 {
   "schemaVersion": 1,
-  "id": "falldropbackport-fabric",
+  "id": "falldrop_backport",
   "version": "${version}",
   "name": "FallDropBackport-Fabric",
   "description": "",
   "authors": [],
   "contact": {},
   "license": "MIT",
-  "icon": "assets/falldropbackport-fabric/icon.png",
+  "icon": "logo.png",
   "environment": "*",
   "entrypoints": {
     "fabric-datagen": [
-      "net.tearpelato.falldropbackportFabric.client.FalldropbackportFabricDataGenerator"
+      "net.tearpelato.falldrop_backport.FallDropBackportDataGen"
     ],
     "client": [
-      "net.tearpelato.falldropbackportFabric.client.FalldropbackportFabricClient"
+      "net.tearpelato.falldrop_backport.FallDropBackportClient"
     ],
     "main": [
-      "net.tearpelato.falldropbackportFabric.FalldropbackportFabric"
-    ]
+      "net.tearpelato.falldrop_backport.FallDropBackport"
+    ],
+    "terrablender":[
+    "net.tearpelato.falldrop_backport.FallDropBackport"
+]
   },
   "mixins": [
-    "falldropbackport-fabric.mixins.json"
+    "falldrop_backport-fabric.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",

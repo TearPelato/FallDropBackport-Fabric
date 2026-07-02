@@ -1,12 +1,12 @@
-package net.tearpelato.falldropbackportFabric.registries;
+package net.tearpelato.falldrop_backport.registries;
 
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.TrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.TrunkPlacerType;
-import net.tearpelato.falldropbackportFabric.Constants;
-import net.tearpelato.falldropbackportFabric.worldgen.placer.PoplarTrunkPlacer;
+import net.tearpelato.falldrop_backport.Constants;
+import net.tearpelato.falldrop_backport.worldgen.placer.PoplarTrunkPlacer;
 
 public class ModTrunkPlacerTypes {
 

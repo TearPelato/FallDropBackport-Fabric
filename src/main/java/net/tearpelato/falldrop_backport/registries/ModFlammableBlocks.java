@@ -1,4 +1,4 @@
-package net.tearpelato.falldropbackportFabric.registries;
+package net.tearpelato.falldrop_backport.registries;
 
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 

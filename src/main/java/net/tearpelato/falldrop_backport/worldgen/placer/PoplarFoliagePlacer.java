@@ -1,4 +1,4 @@
-package net.tearpelato.falldropbackportFabric.worldgen.placer;
+package net.tearpelato.falldrop_backport.worldgen.placer;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
@@ -15,7 +15,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacerType;
-import net.tearpelato.falldropbackportFabric.registries.ModFoliagePlacerTypes;
+import net.tearpelato.falldrop_backport.registries.ModFoliagePlacerTypes;
 
 import java.util.function.Function;
 

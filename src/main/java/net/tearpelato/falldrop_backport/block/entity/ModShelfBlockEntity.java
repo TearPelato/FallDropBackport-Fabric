@@ -1,10 +1,10 @@
-package net.tearpelato.falldropbackportFabric.block.entity;
+package net.tearpelato.falldrop_backport.block.entity;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.entity.ShelfBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
-import net.tearpelato.falldropbackportFabric.registries.ModBlockEntities;
+import net.tearpelato.falldrop_backport.registries.ModBlockEntities;
 
 public class ModShelfBlockEntity extends ShelfBlockEntity {
     public ModShelfBlockEntity(BlockPos worldPosition, BlockState blockState) {

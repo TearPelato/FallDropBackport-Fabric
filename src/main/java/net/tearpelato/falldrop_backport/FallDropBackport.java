@@ -1,8 +1,8 @@
-package net.tearpelato.falldropbackportFabric;
+package net.tearpelato.falldrop_backport;
 
 import net.fabricmc.api.ModInitializer;
-import net.tearpelato.falldropbackportFabric.registries.ModBiomes;
-import net.tearpelato.falldropbackportFabric.registries.*;
+import net.tearpelato.falldrop_backport.registries.ModBiomes;
+import net.tearpelato.falldrop_backport.registries.*;
 import terrablender.api.TerraBlenderApi;
 
 public class FallDropBackport implements ModInitializer, TerraBlenderApi {
@@ -23,7 +23,7 @@ public class FallDropBackport implements ModInitializer, TerraBlenderApi {
 
         ModFlammableBlocks.registerFlammableBlocks();
         ModStrippableBlocks.registerStrippableBlocks();
-
+        ModTreeDecoratorType.registerTreeDecorators();
 
 
 

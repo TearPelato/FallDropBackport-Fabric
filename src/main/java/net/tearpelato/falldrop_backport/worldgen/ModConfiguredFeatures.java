@@ -1,4 +1,4 @@
-package net.tearpelato.falldropbackportFabric.worldgen;
+package net.tearpelato.falldrop_backport.worldgen;
 
 import net.minecraft.core.Direction;
 import net.minecraft.core.HolderSet;
@@ -28,11 +28,11 @@ import net.minecraft.world.level.levelgen.feature.treedecorators.PlaceOnGroundDe
 import net.minecraft.world.level.levelgen.placement.BlockPredicateFilter;
 import net.minecraft.world.level.levelgen.placement.CountPlacement;
 import net.minecraft.world.level.levelgen.placement.RandomOffsetPlacement;
-import net.tearpelato.falldropbackportFabric.Constants;
-import net.tearpelato.falldropbackportFabric.registries.ModBlocks;
-import net.tearpelato.falldropbackportFabric.worldgen.placer.PoplarFoliagePlacer;
-import net.tearpelato.falldropbackportFabric.worldgen.placer.PoplarTrunkPlacer;
-import net.tearpelato.falldropbackportFabric.worldgen.placer.decorator.ShelfMushroomDecorator;
+import net.tearpelato.falldrop_backport.Constants;
+import net.tearpelato.falldrop_backport.registries.ModBlocks;
+import net.tearpelato.falldrop_backport.worldgen.placer.PoplarFoliagePlacer;
+import net.tearpelato.falldrop_backport.worldgen.placer.PoplarTrunkPlacer;
+import net.tearpelato.falldrop_backport.worldgen.placer.decorator.ShelfMushroomDecorator;
 
 import java.util.List;
 

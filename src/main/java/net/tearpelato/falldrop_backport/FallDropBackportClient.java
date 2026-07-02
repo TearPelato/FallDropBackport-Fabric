@@ -1,4 +1,4 @@
-package net.tearpelato.falldropbackportFabric;
+package net.tearpelato.falldrop_backport;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleProviderRegistry;
@@ -10,11 +10,11 @@ import net.minecraft.client.renderer.blockentity.ShelfRenderer;
 import net.minecraft.client.renderer.blockentity.StandingSignRenderer;
 import net.minecraft.client.renderer.entity.BoatRenderer;
 import net.minecraft.client.renderer.entity.EntityRenderers;
-import net.tearpelato.falldropbackportFabric.entity.client.ModModelLayerLocations;
-import net.tearpelato.falldropbackportFabric.particle.PoplarParticles;
-import net.tearpelato.falldropbackportFabric.registries.ModBlockEntities;
-import net.tearpelato.falldropbackportFabric.registries.ModEntities;
-import net.tearpelato.falldropbackportFabric.registries.ModParticleTypes;
+import net.tearpelato.falldrop_backport.entity.client.ModModelLayerLocations;
+import net.tearpelato.falldrop_backport.particle.PoplarParticles;
+import net.tearpelato.falldrop_backport.registries.ModBlockEntities;
+import net.tearpelato.falldrop_backport.registries.ModEntities;
+import net.tearpelato.falldrop_backport.registries.ModParticleTypes;
 
 public class FallDropBackportClient implements ClientModInitializer {
     @Override
