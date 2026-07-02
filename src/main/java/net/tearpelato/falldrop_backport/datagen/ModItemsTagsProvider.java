@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagsProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.tags.ItemTags;
+import net.tearpelato.falldrop_backport.Constants;
 import net.tearpelato.falldrop_backport.registries.ModBlocks;
 import net.tearpelato.falldrop_backport.registries.ModTags;
 
@@ -17,20 +18,20 @@ public class ModItemsTagsProvider extends FabricTagsProvider.ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
 
-        valueLookupBuilder(ModTags.Items.POPLAR_LOGS)
-                .add(ModBlocks.POPLAR_LOG.asItem())
-                .add(ModBlocks.POPLAR_WOOD.asItem())
-                .add(ModBlocks.STRIPPED_POPLAR_LOG.asItem())
-                .add(ModBlocks.STRIPPED_POPLAR_WOOD.asItem());
-        valueLookupBuilder(ItemTags.WOODEN_TOOL_MATERIALS).add(ModBlocks.POPLAR_PLANKS.asItem());
-        valueLookupBuilder(ItemTags.PLANKS).add(ModBlocks.POPLAR_PLANKS.asItem());
+        tag(ModTags.Items.POPLAR_LOGS)
+                .add(Constants.getResourceKeyItem(ModBlocks.POPLAR_LOG.asItem()))
+                .add(Constants.getResourceKeyItem(ModBlocks.POPLAR_WOOD.asItem()))
+                .add(Constants.getResourceKeyItem(ModBlocks.STRIPPED_POPLAR_LOG.asItem()))
+                .add(Constants.getResourceKeyItem(ModBlocks.STRIPPED_POPLAR_WOOD.asItem()));
+        tag(ItemTags.WOODEN_TOOL_MATERIALS).add(Constants.getResourceKeyItem(ModBlocks.POPLAR_PLANKS.asItem()));
+        tag(ItemTags.PLANKS).add(Constants.getResourceKeyItem(ModBlocks.POPLAR_PLANKS.asItem()));
 
-        valueLookupBuilder(ItemTags.WOODEN_BUTTONS).add(ModBlocks.POPLAR_BUTTON.asItem());
-        valueLookupBuilder(ItemTags.WOODEN_DOORS).add(ModBlocks.POPLAR_DOOR.asItem());
-        valueLookupBuilder(ItemTags.WOODEN_FENCES).add(ModBlocks.POPLAR_FENCE.asItem());
-        valueLookupBuilder(ItemTags.WOODEN_SLABS).add(ModBlocks.POPLAR_SLAB.asItem());
-        valueLookupBuilder(ItemTags.WOODEN_PRESSURE_PLATES).add(ModBlocks.POPLAR_PRESSURE_PLATE.asItem());
-        valueLookupBuilder(ItemTags.WOODEN_STAIRS).add(ModBlocks.POPLAR_STAIRS.asItem());
-        valueLookupBuilder(ItemTags.WOODEN_TRAPDOORS).add(ModBlocks.POPLAR_TRAPDOOR.asItem());
+        tag(ItemTags.WOODEN_BUTTONS).add(Constants.getResourceKeyItem(ModBlocks.POPLAR_BUTTON.asItem()));
+        tag(ItemTags.WOODEN_DOORS).add(Constants.getResourceKeyItem(ModBlocks.POPLAR_DOOR.asItem()));
+        tag(ItemTags.WOODEN_FENCES).add(Constants.getResourceKeyItem(ModBlocks.POPLAR_FENCE.asItem()));
+        tag(ItemTags.WOODEN_SLABS).add(Constants.getResourceKeyItem(ModBlocks.POPLAR_SLAB.asItem()));
+        tag(ItemTags.WOODEN_PRESSURE_PLATES).add(Constants.getResourceKeyItem(ModBlocks.POPLAR_PRESSURE_PLATE.asItem()));
+        tag(ItemTags.WOODEN_STAIRS).add(Constants.getResourceKeyItem(ModBlocks.POPLAR_STAIRS.asItem()));
+        tag(ItemTags.WOODEN_TRAPDOORS).add(Constants.getResourceKeyItem(ModBlocks.POPLAR_TRAPDOOR.asItem()));
     }
 }

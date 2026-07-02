@@ -39,7 +39,7 @@ dependencies {
     implementation "net.fabricmc:fabric-loader:${project.loader_version}"
     implementation "com.github.glitchfiend:TerraBlender-fabric:${minecraft_version}-${terrablender_version}"
     implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-    implementation "curse.maven:catalogue-459701:7943158"
+    //implementation "curse.maven:catalogue-459701:7943158"
 }
 
 processResources {
