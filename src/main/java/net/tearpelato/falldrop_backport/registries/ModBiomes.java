@@ -1,0 +1,43 @@
+package net.tearpelato.falldropbackportFabric.registries;
+
+import net.minecraft.core.registries.Registries;
+import net.minecraft.data.worldgen.BootstrapContext;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.level.biome.Biome;
+import net.tearpelato.falldropbackportFabric.Constants;
+import net.tearpelato.falldropbackportFabric.worldgen.biome.ModOverworldBiomes;
+import net.tearpelato.falldropbackportFabric.worldgen.biome.region.OverworldRegion;
+import terrablender.api.Regions;
+
+public class ModBiomes {
+
+    public static final ResourceKey<Biome> DAPPLED_FOREST = registerBiomeKey("dappled_forest");
+
+
+
+    public static void registerBiomes() {
+        Regions.register(new OverworldRegion(Constants.id("overworld"), 20));
+
+    }
+
+
+    public static void bootstrap(BootstrapContext<Biome> context) {
+        var carver = context.lookup(Registries.CONFIGURED_CARVER);
+        var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
+        System.out.println("REGISTERING BIOME");
+        register(context, DAPPLED_FOREST, ModOverworldBiomes.dappledForest(placedFeatures, carver));
+
+
+    }
+
+
+
+    private static void register(BootstrapContext<Biome> context, ResourceKey<Biome> key, Biome biome ) {
+        context.register(key, biome);
+
+    }
+
+    private static ResourceKey<Biome> registerBiomeKey(String name) {
+        return ResourceKey.create(Registries.BIOME, Constants.vanilla(name));
+    }
+}

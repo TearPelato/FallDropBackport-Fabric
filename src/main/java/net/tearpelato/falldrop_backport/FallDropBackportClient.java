@@ -1,0 +1,40 @@
+package net.tearpelato.falldropbackportFabric;
+
+import net.fabricmc.api.ClientModInitializer;
+import net.fabricmc.fabric.api.client.particle.v1.ParticleProviderRegistry;
+import net.fabricmc.fabric.api.client.rendering.v1.ModelLayerRegistry;
+import net.minecraft.client.model.object.boat.BoatModel;
+import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
+import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
+import net.minecraft.client.renderer.blockentity.ShelfRenderer;
+import net.minecraft.client.renderer.blockentity.StandingSignRenderer;
+import net.minecraft.client.renderer.entity.BoatRenderer;
+import net.minecraft.client.renderer.entity.EntityRenderers;
+import net.tearpelato.falldropbackportFabric.entity.client.ModModelLayerLocations;
+import net.tearpelato.falldropbackportFabric.particle.PoplarParticles;
+import net.tearpelato.falldropbackportFabric.registries.ModBlockEntities;
+import net.tearpelato.falldropbackportFabric.registries.ModEntities;
+import net.tearpelato.falldropbackportFabric.registries.ModParticleTypes;
+
+public class FallDropBackportClient implements ClientModInitializer {
+    @Override
+    public void onInitializeClient() {
+
+        ModelLayerRegistry.registerModelLayer(ModModelLayerLocations.POPLAR_BOAT, BoatModel::createBoatModel);
+        ModelLayerRegistry.registerModelLayer(ModModelLayerLocations.POPLAR_CHEST_BOAT, BoatModel::createChestBoatModel);
+        EntityRenderers.register(ModEntities.POPLAR_BOAT, context -> new BoatRenderer(context, ModModelLayerLocations.POPLAR_BOAT));
+        EntityRenderers.register(ModEntities.POPLAR_CHEST_BOAT, context -> new BoatRenderer(context, ModModelLayerLocations.POPLAR_CHEST_BOAT));
+
+
+        ParticleProviderRegistry.getInstance().register(ModParticleTypes.RED_POPLAR_LEAVES, PoplarParticles.PoplarProvider::new);
+        ParticleProviderRegistry.getInstance().register(ModParticleTypes.ORANGE_POPLAR_LEAVES, PoplarParticles.PoplarProvider::new);
+        ParticleProviderRegistry.getInstance().register(ModParticleTypes.YELLOW_POPLAR_LEAVES, PoplarParticles.PoplarProvider::new);
+
+        BlockEntityRenderers.register(ModBlockEntities.SHELF, ShelfRenderer::new);
+        BlockEntityRenderers.register(ModBlockEntities.SIGN, StandingSignRenderer::new);
+        BlockEntityRenderers.register(ModBlockEntities.HANGING_SIGN, HangingSignRenderer::new);
+
+
+
+    }
+}

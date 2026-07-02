@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "falldropbackport-fabric",
+  "version": "${version}",
+  "name": "FallDropBackport-Fabric",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/falldropbackport-fabric/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "net.tearpelato.falldropbackportFabric.client.FalldropbackportFabricDataGenerator"
+    ],
+    "client": [
+      "net.tearpelato.falldropbackportFabric.client.FalldropbackportFabricClient"
+    ],
+    "main": [
+      "net.tearpelato.falldropbackportFabric.FalldropbackportFabric"
+    ]
+  },
+  "mixins": [
+    "falldropbackport-fabric.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
