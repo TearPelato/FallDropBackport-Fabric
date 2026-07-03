@@ -1,6 +1,7 @@
 package net.tearpelato.falldrop_backport;
 
 import net.fabricmc.api.ModInitializer;
+import net.minecraft.client.renderer.Sheets;
 import net.tearpelato.falldrop_backport.registries.ModBiomes;
 import net.tearpelato.falldrop_backport.registries.*;
 import terrablender.api.TerraBlenderApi;
@@ -25,7 +26,8 @@ public class FallDropBackport implements ModInitializer, TerraBlenderApi {
         ModStrippableBlocks.registerStrippableBlocks();
         ModTreeDecoratorType.registerTreeDecorators();
 
-
+        Sheets.createSignSprite(ModWoodType.POPLAR);
+        Sheets.createHangingSignSprite(ModWoodType.POPLAR);
 
 
     }

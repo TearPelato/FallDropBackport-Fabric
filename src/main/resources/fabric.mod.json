@@ -8,6 +8,7 @@
   "contact": {},
   "license": "MIT",
   "icon": "logo_mod.png",
+  "accessWidener": "falldrop_backport.accesswidener",
   "environment": "*",
   "entrypoints": {
     "fabric-datagen": [
@@ -24,7 +25,7 @@
 ]
   },
   "mixins": [
-    "falldrop_backport-fabric.mixins.json"
+    "falldrop_backport.json"
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",

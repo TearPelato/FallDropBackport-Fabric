@@ -15,4 +15,9 @@ public class ModHangingSignBlockEntity extends HangingSignBlockEntity {
     public BlockEntityType<?> getType() {
         return ModBlockEntities.HANGING_SIGN;
     }
+
+    @Override
+    public boolean isValidBlockState(BlockState blockState) {
+        return ModBlockEntities.HANGING_SIGN.isValid(blockState);
+    }
 }

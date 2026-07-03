@@ -15,4 +15,9 @@ public class ModSignBlockEntity extends SignBlockEntity {
     public BlockEntityType<?> getType() {
         return ModBlockEntities.SIGN;
     }
+
+    @Override
+    public boolean isValidBlockState(BlockState blockState) {
+        return ModBlockEntities.SIGN.isValid(blockState);
+    }
 }

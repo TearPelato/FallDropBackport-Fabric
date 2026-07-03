@@ -4,6 +4,7 @@ import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleProviderRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.ModelLayerRegistry;
 import net.minecraft.client.model.object.boat.BoatModel;
+import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
 import net.minecraft.client.renderer.blockentity.ShelfRenderer;
@@ -15,6 +16,7 @@ import net.tearpelato.falldrop_backport.particle.PoplarParticles;
 import net.tearpelato.falldrop_backport.registries.ModBlockEntities;
 import net.tearpelato.falldrop_backport.registries.ModEntities;
 import net.tearpelato.falldrop_backport.registries.ModParticleTypes;
+import net.tearpelato.falldrop_backport.registries.ModWoodType;
 
 public class FallDropBackportClient implements ClientModInitializer {
     @Override

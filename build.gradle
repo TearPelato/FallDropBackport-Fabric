@@ -33,6 +33,7 @@ repositories {
     }
 }
 
+
 dependencies {
     // To change the versions see the gradle.properties file
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
@@ -40,6 +41,42 @@ dependencies {
     implementation "com.github.glitchfiend:TerraBlender-fabric:${minecraft_version}-${terrablender_version}"
     implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
     implementation "curse.maven:catalogue-459701:7943158"
+}
+
+loom {
+    def aw = project.file("src/main/resources/falldrop_backport.accesswidener")
+    if (aw.exists()) {
+        accessWidenerPath.set(aw)
+    }
+    mixin {
+        defaultRefmapName.set("falldrop_backport.refmap.json")
+    }
+    runs {
+        client {
+            client()
+            setConfigName('Fabric Client')
+            ideConfigGenerated(true)
+            runDir('runs/client')
+        }
+        server {
+            server()
+            setConfigName('Fabric Server')
+            ideConfigGenerated(true)
+            runDir('runs/server')
+        }
+        datagen {
+            inherit client
+            name "Data Generation"
+            setConfigName('Fabric Datagen')
+            ideConfigGenerated(true)
+
+            vmArg "-Dfabric-api.datagen"
+            vmArg "-Dfabric-api.datagen.output-dir=${file("src/generated/resources")}"
+            vmArg "-Dfabric-api.datagen.modid=falldrop_backport"
+
+            runDir 'runs/datagen'
+        }
+    }
 }
 
 processResources {
@@ -54,6 +91,8 @@ processResources {
                 "loader_version": project.loader_version
     }
 }
+
+
 
 def targetJavaVersion = 25
 tasks.withType(JavaCompile).configureEach {

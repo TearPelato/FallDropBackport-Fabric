@@ -71,7 +71,7 @@ public class ModBlockLootableProvider extends FabricBlockLootSubProvider {
         dropSelf(ModBlocks.POPLAR_FENCE_GATE);
         dropSelf(ModBlocks.POPLAR_PRESSURE_PLATE);
         dropSelf(ModBlocks.POPLAR_BUTTON);
-        dropSelf(ModBlocks.POPLAR_DOOR);
+        add(ModBlocks.POPLAR_DOOR, createDoorTable(ModBlocks.POPLAR_DOOR));
         dropSelf(ModBlocks.POPLAR_TRAPDOOR);
         dropSelf(ModBlocks.POPLAR_SHELF);
 

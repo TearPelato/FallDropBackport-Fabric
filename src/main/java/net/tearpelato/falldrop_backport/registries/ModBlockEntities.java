@@ -9,6 +9,8 @@ import net.tearpelato.falldrop_backport.block.entity.ModHangingSignBlockEntity;
 import net.tearpelato.falldrop_backport.block.entity.ModShelfBlockEntity;
 import net.tearpelato.falldrop_backport.block.entity.ModSignBlockEntity;
 
+import java.util.function.Supplier;
+
 public class ModBlockEntities {
 
     public static final BlockEntityType<ModSignBlockEntity> SIGN =
